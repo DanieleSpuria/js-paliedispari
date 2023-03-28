@@ -14,4 +14,6 @@ Dichiariamo chi ha vinto.
 
 ## Sviluppo
 
-1. Input e bottone per scrivere, inviare e salvare parola dell'utente.
+- Input e bottone per scrivere, inviare e salvare parola dell'utente.
+- La funzione splitta, reversa e controlla se la parola inserita è palindroma.
+- Il click del tasto stampa il risultato e resetta l'input.
