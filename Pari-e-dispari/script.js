@@ -10,15 +10,15 @@
 
 const select = document.getElementById('pariDispari');
 const input = document.getElementById('numero');
-const button = document.querySelector('button');
+const invia = document.getElementById('invia');
+const reset = document.getElementById('reset');
 const output = document.querySelector('h1');
 
 let message;
 
 
 
-
-button.addEventListener('click', function() {
+invia.addEventListener('click', function() {
   
   // Invio dati ed elaborazione
 
@@ -59,7 +59,15 @@ button.addEventListener('click', function() {
   select.value = 'defalut';
   input.value = '';
 
+})
 
+
+
+reset.addEventListener('click', function () {
+
+  message = '';
+  output.innerHTML = message;
+    
 })
 
 
