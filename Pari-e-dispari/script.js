@@ -6,6 +6,7 @@
 ***********************************************************************************/
 
 
+// Html
 
 const select = document.getElementById('pariDispari');
 const input = document.getElementById('numero');
@@ -14,29 +15,46 @@ const output = document.querySelector('h1');
 
 let message;
 
-console.log(select, input, button);
+
+
 
 button.addEventListener('click', function() {
+  
+  // Invio dati ed elaborazione
 
   const pariDispari = select.value;
   const userNumber = parseInt(input.value);
   const pc = parseInt(random(1,5));
-
   const somma = userNumber + pc;
   const risultato = sommaPariDispari(somma);
 
-  if (risultato === select.value) {
-    message = 'Hai vinto!'
+
+  // Verifica dati e stampa
+
+  if ((parseInt(input.value) <= 5) && (parseInt(input.value) >= 1) && (select.value != 'default')){
+
+    if (risultato === select.value) {
+      message = 'Hai vinto!'
+      } else {
+      message = 'Hai perso!'
+      }
+
   } else {
-    message = 'Hai perso!'
+    message = 'Inserisci i dati corretti!'
   }
-
-  output.innerHTML = message;
-
+    
   console.log('Utente', pariDispari, userNumber);
   console.log('Pc', pc);
   console.log('Somma', somma);
-  console.log('Risultato', risultato);
+  console.log('Risultato', risultato);    
+   
+  
+
+  output.innerHTML = message;
+
+
+
+  // Reset
 
   select.value = 'defalut';
   input.value = '';
