@@ -52,19 +52,14 @@ invia.addEventListener('click', function() {
 
   output.innerHTML = message;
 
-
-
-  // Reset
-
-  select.value = 'defalut';
-  input.value = '';
-
 })
 
 
 
 reset.addEventListener('click', function () {
 
+  select.value = 'defalut';
+  input.value = '';
   message = '';
   output.innerHTML = message;
     
