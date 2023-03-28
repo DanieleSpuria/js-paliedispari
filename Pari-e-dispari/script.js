@@ -16,13 +16,15 @@ console.log(select, input, button);
 button.addEventListener('click', function() {
 
   const pariDispari = select.value;
-  const userNumber = input.value;
-  const pc = random(1,5);
+  const userNumber = parseInt(input.value);
+  const pc = parseInt(random(1,5));
+
+  const somma = userNumber + pc;
 
   select.value = 'defalut';
   input.value = '';
 
-  console.log(pariDispari, userNumber, pc);
+  console.log(pariDispari, userNumber, pc, somma);
 
 })
 
