@@ -20,11 +20,13 @@ button.addEventListener('click', function() {
   const pc = parseInt(random(1,5));
 
   const somma = userNumber + pc;
+  const risultato = sommaPariDispari(somma);
+
 
   select.value = 'defalut';
   input.value = '';
 
-  console.log(pariDispari, userNumber, pc, somma);
+  console.log(pariDispari, userNumber, pc, somma, 'risutato', risultato);
 
 })
 
@@ -36,4 +38,16 @@ function random(min, max) {
   const randomNumber = Math.floor(Math.random() * (max - min +1) + min);
   return randomNumber;
 
+}
+
+function sommaPariDispari(somma) {
+
+  let risultato;
+  if(!(somma % 2)){
+    risultato = 'pari'; 
+  } else {
+    risultato = 'dispari'
+  }
+
+  return risultato;
 }

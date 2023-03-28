@@ -22,6 +22,6 @@ Dichiariamo chi ha vinto.
 - Funzione che genera un numero random per il pc.
 - Click che invia i dati e resetta.
 - Variabile con la somma dei due numeri.
-
+- sommaPariDispari dice se la somma è pari o dispari.
 
 
