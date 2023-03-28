@@ -13,8 +13,19 @@ const button = document.querySelector('button');
 
 console.log(select, input, button);
 
-const pc = random(1,5);
-console.log(pc);
+button.addEventListener('click', function() {
+
+  const pariDispari = select.value;
+  const userNumber = input.value;
+  const pc = random(1,5);
+
+  select.value = 'defalut';
+  input.value = '';
+
+  console.log(pariDispari, userNumber, pc);
+
+})
+
 
 
 
