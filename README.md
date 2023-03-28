@@ -23,5 +23,8 @@ Dichiariamo chi ha vinto.
 - Click che invia i dati e resetta.
 - Variabile con la somma dei due numeri.
 - sommaPariDispari dice se la somma è pari o dispari.
+- h1 come output.
+- se risultato e uguale all'input dell'utente vince, altrimenti perde.
+- Stampare risultato in h1.
 
 

@@ -10,6 +10,9 @@
 const select = document.getElementById('pariDispari');
 const input = document.getElementById('numero');
 const button = document.querySelector('button');
+const output = document.querySelector('h1');
+
+let message;
 
 console.log(select, input, button);
 
@@ -22,11 +25,22 @@ button.addEventListener('click', function() {
   const somma = userNumber + pc;
   const risultato = sommaPariDispari(somma);
 
+  if (risultato === select.value) {
+    message = 'Hai vinto!'
+  } else {
+    message = 'Hai perso!'
+  }
+
+  output.innerHTML = message;
+
+  console.log('Utente', pariDispari, userNumber);
+  console.log('Pc', pc);
+  console.log('Somma', somma);
+  console.log('Risultato', risultato);
 
   select.value = 'defalut';
   input.value = '';
 
-  console.log(pariDispari, userNumber, pc, somma, 'risutato', risultato);
 
 })
 
