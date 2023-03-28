@@ -60,7 +60,7 @@ invia.addEventListener('click', function() {
 
 reset.addEventListener('click', function () {
 
-  select.value = 'defalut';
+  select.value = 'default';
   input.value = '';
   message = '';
   output.innerHTML = message;

@@ -26,5 +26,6 @@ Dichiariamo chi ha vinto.
 - h1 come output.
 - se risultato e uguale all'input dell'utente vince, altrimenti perde.
 - Stampare risultato in h1.
+- Verifica dati in ingresso e tasto reset.
 
 
