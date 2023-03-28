@@ -20,6 +20,7 @@ Dichiariamo chi ha vinto.
 
 - Select, input e bottone per selezionare pari o dispari, numero e inviare.
 - Funzione che genera un numero random per il pc.
+- Click che invia i dati e resetta.
 
 
 
