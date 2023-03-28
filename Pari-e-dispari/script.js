@@ -56,6 +56,8 @@ invia.addEventListener('click', function() {
 
 
 
+// Reset
+
 reset.addEventListener('click', function () {
 
   select.value = 'defalut';
