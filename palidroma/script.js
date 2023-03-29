@@ -14,7 +14,7 @@ let messaggio;
 
 invia.addEventListener('click', function () {
  
-  const controllo = palindroma(parola.value);
+  const controllo = palindroma((parola.value).trim());
   output.innerHTML = controllo;
   parola.value = '';
 
@@ -24,12 +24,11 @@ invia.addEventListener('click', function () {
 
 function palindroma(word) {
 
-  const split = word.split('');
-  const reverse = split.reverse();
+  const reverse = word.split('').reverse();
 
   for (let i = 0; i < reverse.length; i++) {
 
-    if (parola.value[i] === reverse[i]) {
+    if (parola.value[i].toUpperCase() === reverse[i].toUpperCase()) {
       messaggio = 'La parola inserita è palindroma';
     } else {
       messaggio = 'La parola inserita non è palindroma';
